@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembar Kerja - SOLID</title>
+    <meta name="description" content="kepegawaian">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+			background: #f8fafc;
+			font-family: 'Segoe UI', Arial, sans-serif;
+		}
+		.navbar {
+			background: linear-gradient(90deg, #e0c3fc 0%, #f9f1c6 100%);
+			box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+		}
+        .navbar-nav {
+			list-style-type: none;
+		}
+		.navbar-nav .nav-link {
+			color: #5a5a5a !important;
+			font-weight: 500;
+			margin-right: 10px;
+			border-radius: 20px;
+			transition: background 0.2s;
+		}
+		.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+			background: #f3e7e9;
+			color: #7f7fd5 !important;
+		}
+		.dashboard-content {
+			margin-top: 80px;
+			text-align: center;
+		}
+		.dashboard-title {
+			color: #7f7fd5;
+			font-size: 2.2rem;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		.card {
+			border: none;
+			border-radius: 18px;
+			box-shadow: 0 2px 12px rgba(127,127,213,0.08);
+			background: #f3e7e9;
+		}
+        body { background: #f8fafc; font-family: 'Segoe UI', Arial, sans-serif; }
+        .page-title { color: #7f7fd5; font-size: 1.8rem; font-weight: 600; margin-top: 90px; margin-bottom: 20px; text-align:center; }
+        .card { border: none; border-radius: 12px; box-shadow: 0 2px 12px rgba(127,127,213,0.06); }
+        .drive-link { word-break: break-all; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color:#7f7fd5;font-weight:bold;">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="umum.html">Umum</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kepegawaian.html">Kepegawaian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keuangan.html">Keuangan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aset.html">Aset</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perencanaan.html">Perencanaan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zonaintegritas.html">Zona Integritas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pelayananpublik.html">Pelayanan Publik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://drive.google.com/drive/folders/1svSoGz-1BHewUfZVy8Orr6COxdfnWWh0?usp=sharing">TKRS</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="container dashboard-content">
+		<div class="dashboard-title">Selamat Datang di Website SOLID</div>
+		<div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+				<div class="card p-4">
+					<i class="fa fa-book fa-2x mb-2" style="color:#7f7fd5;"></i>
+					<h5>Peraturan</h5>
+					<p>Peraturan Kepegawaian</p>
+                    <a href="https://drive.google.com/drive/folders/1bJYnYpGwsB_apMmVMvozeY8Q6W7_yr1-?usp=drive_link" class="nav-link">Go</a>
+				</div>
+			</div>
+            </div>		
+	</div>
+    
+    <div class="container">
+        <div class="page-title">Lembar Kerja Kepegawaian</div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card p-4 mb-3">
+                    <h5>Daftar Link Google Drive</h5>
+                    <p class="text-muted">Klik salah satu link di bawah untuk membuka file Lembar Kerja di Google Drive.</p>
+                    <ul class="list-group">
+                        <!-- Placeholder links: replace href with actual Google Drive share links -->
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1pIr4NcsSvFaFPxncq_c8OD2zspyGDGMn?usp=drive_link" target="_blank">Kenaikan pangkat</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1EsNvaPjkbV3WJ7OMsriuT_CIoHeMS3TL?usp=drive_link" target="_blank">Kenaikan/alih jenjang</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1uTleLUMYOjDG4FM6YfJ8CsYZy99Xut_z?usp=drive_link" target="_blank">Tugas Belajar</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://docs.google.com/spreadsheets/d/1va1WUcQ_3zOzGl3heI5lKcXzjzz9myBH/edit?usp=drive_link&ouid=100247416993450497182&rtpof=true&sd=true" target="_blank">Diklat</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1wC-IY1YppZSefJhxy5RlU8WFxLMCpt0C?usp=drive_link" target="_blank">Cuti</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://docs.google.com/spreadsheets/d/1hHl8TDb81G02ob0nUxW10q9KlUbdAZ53/edit?usp=drive_link&ouid=100247416993450497182&rtpof=true&sd=true" target="_blank">Kenaikan Gaji Berkala</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1atC9HK43jhSvQBMgukr8cwhX_bi9w16F" target="_blank">SKP Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1s7BuHilCmZSGhDlrzoe4CVfW-qzW8tHl?usp=drive_link" target="_blank">PAK Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1euYoYx-1fc3IN3miz7jpsX6PHQ03CKec?usp=drive_link" target="_blank">Satya Lencana</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1z8nziICa9emkzIonAOBcJbxlNyHp29m4?usp=drive_link" target="_blank">Rekomendasi LPDP</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1dwFMt3NkPVgE8bUn_IHIFmk9soAnwFXZ?usp=drive_link" target="_blank">Rekomendasi Izin Belajar/Tugas Belajar</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1HOWGcb54uy9aSWRjpGV2jhnihTFacSdV?usp=drive_link" target="_blank">Uji Kompetensi</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1imA_iY_rGRfaxD-U0cldkRbSTWEBVyM-?usp=drive_link" target="_blank">Pemberhentian/pengangkatan kembali dalam jabatan fungsional</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1xDwhvHAFOpBLnlwp88BupQSLhguRGhPR?usp=drive_link" target="_blank">Anjab ABK Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/18kfM7odmhqnX4K7LgDY0omKGCYzfpOJ8?usp=drive_link" target="_blank">Rencana Kebutuhan Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1_iVt55ROHsIPCFt6XQ78YUgyAHYbkV2V?usp=drive_link" target="_blank">SISDMK Kemenkes</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1ijsZfvdA0sbeOINfGR0-rot_wx6YK6el?usp=drive_link" target="_blank">SIASN Kemenkes</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/110JGzilhHJxzHB3va_zASozkC7gKmYZ-?usp=drive_link" target="_blank">Pengajuan UDID</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1VGRmZPX5WZeARQqiWWUEroZIriMB6xVtDpXTJFNpleKpB0afnp6trEyJ7GyO_qjSXQOWVifu?usp=drive_link" target="_blank">Pengaturan Jadwal Pegawai di Aplikasi SIAP</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1yZk9P1GVxRyfKyEKBruawenFBp-5ph04?usp=drive_link" target="_blank">SKJ</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1cDyqnG3NgCV6oodWQWOud4q2wPfZPw9k?usp=drive_link" target="_blank">Evajab</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/10iznC0dL16dnyidBaQFyYGeNnr8bK1Tc?usp=drive_link" target="_blank">Pencantuman gelar</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1sJz9C_-govxoExJB1fZKqW48eb_Dxnj9?usp=drive_link" target="_blank">Penyesuaian ijazah</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/18PIgKRKH38y6NjV8ij-UsDqDb9_ePw7R?hl=id" target="_blank">Peta Jabatan</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/18lD_q2Ey1Y9bkN1pJbtiGRL7z0ilwcNX" target="_blank">Dokumen Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1AbBgsAzFRXLZPvFMVlU3snEKa030bbi8" target="_blank">Data/Jumlah Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1LhPteJEu_wO5SckYaXTEVKmsgRkdU-Qs?usp=drive_link" target="_blank">Uraian Tugas Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1ywbAMbUue8L9eXY4IasCfDf9XCN8Bmb6?usp=drive_link" target="_blank">SPMT</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1z6zIsmaMrYr6RmeybULEuQTd6_LN9voL?usp=drive_link" target="_blank">Mutasi Pegawai</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://docs.google.com/spreadsheets/d/1VXNEc6Neoq7uKw2gNgLUajJwjzfqbBXa/edit?gid=505848864#gid=505848864" target="_blank">Surat Tugas</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1qw7whQfNIPCiapiTt3gyFEWZo45SRRcG?usp=drive_link" target="_blank">SOP Kepegawaian</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1XN1XznktUuxsBChSvUuttrCGNc1xoCLa" target="_blank">Rekomendasi Formasi Jabatan Fungsional</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1jpoxMx2bFZ-d20uuOap2DeSVC4tmqWbZ" target="_blank">Renbut</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://docs.google.com/spreadsheets/d/1yox1xywrvNI0v7LecSoAlqAPIO-e8iIM/edit?usp=drive_link&ouid=100247416993450497182&rtpof=true&sd=true" target="_blank">Daftar Nama Rekomendasi Dokter</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/1nrWZ-w2c3g4K_QYVAgCCU5JOm2jeTnKU?hl=id" target="_blank">Training Need Analysis (TNA)</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/150mIH9ZnFcTnvsl3MbXNb4xY5BoXg3SX?hl=id" target="_blank">MoU</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://docs.google.com/spreadsheets/d/1jcuhH4yi-AfZb_Qry3cxahgwj0J7XvwUwrFp7bwAXAU/edit?usp=drive_link" target="_blank">Kontrol Mutasi</a>
+                        </li>
+                        <li class="list-group-item drive-link">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            &nbsp; <a href="https://drive.google.com/drive/folders/12cIvDVngO5nJZJYSMg50thKQgJOJauOJ" target="_blank">Pensiun</a>
+                        </li>
+                    </ul>
+
+                    <hr>
+                    <!-- <p class="small text-muted">Petunjuk: Untuk mengganti link, buka file <code>lembar-kerja.html</code> dan ubah atribut <code>href</code> pada elemen <code>&lt;a&gt;</code> yang sesuai dengan URL berbagi Google Drive Anda. Pastikan URL menggunakan format berbagi publik atau 'Anyone with the link'.</p> -->
+                </div>
+
+                <div class="card p-3">
+                    <h6>Kontak / Catatan</h6>
+                    <p class="mb-0">Jika ada yang perlu diperbarui atau file tidak dapat diakses, periksa pengaturan berbagi di Google Drive atau hubungi admin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- footer (copied minimal) -->
+     
+    <footer>
+			<tr>
+								<td> Fanny Dwi Ryamore
+									<br>Aktualisasi Pelatihan Dasar CPNS</td>
+								</td>
+								<td>
+									
+								</td>
+							</tr>
+				<div class="container">
+					<!-- navigation link -->
+					<p class="nav-link"><a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=ryamore.f@gmail.com">Contact</a> &nbsp;</p>
+					<!-- copy right -->
+					<p class="copy-right">Copyright &copy; 2025 <a href="biodata.html">Fanny Dwi Ryamore</a> </p>
+				</div>
+			</footer>
+
+    <!-- JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
