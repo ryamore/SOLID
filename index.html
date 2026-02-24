@@ -14,6 +14,58 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<style>
+		.hero {
+    position: relative;
+    width: 100%;
+    height: 75vh; /* desktop tinggi */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* bikin auto crop cantik */
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 12px;
+}
+
+.hero-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 1rem;
+}
+
+/* RESPONSIVE KHUSUS HP */
+@media (max-width: 768px) {
+    .hero {
+        height: 45vh; /* lebih pendek di HP */
+    }
+
+    .hero-overlay {
+        padding: 15px 20px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-overlay p {
+        font-size: 0.8rem;
+    }
+}
   .banner {
     position: relative;
     width: 100%;
@@ -115,11 +167,14 @@
 		<div class="wrapper">
 			<!-- banner -->
 					<!-- banner content -->
-					<div class="banner-content">
-						<!-- logo image -->
-						<img src="img/banner.jpg" alt="Banner" class="banner-img">
-						<!-- short paragraph -->
-					</div>
+					<!-- HERO BANNER -->
+			<div class="hero">
+    			<img src="img/banner.jpg" alt="Banner RSUD">
+    		<div class="hero-overlay">
+        		<h1>SOLID</h1>
+        		<p>Sistem Optimalisasi Integrasi Lembar Informasi dan Data</p>
+    		</div>
+		</div>
 				</div>
 	<div class="container dashboard-content">
 		<div class="dashboard-title">Selamat Datang di Website SOLID</div>
